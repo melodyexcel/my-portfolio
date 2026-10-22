@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+		<title>Excel's portfolio</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	
+	<body>
+		<div id="header">
+			<div class="container">
+				<nav>
+					<img src="images/header.jpeg" class="logo">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Contacts</a></li>
+					</ul>
+				</nav>
+				<div class="header-text">
+					<p>Web Developer</p>
+					<h1>Hi, I'm <span>Excel</span><br> Melody from Mombasa</h1>
+				</div>
+			</div>
+		</div>
+		
+		<!-- --------  about ---------- -->
+		
+		<div id="about">
+			<div class="container">
+				<div class="row">
+					<div class="about-col-1">
+						<img src="images/main1.jpeg">
+					</div>
+					<div class="about-col-2">
+						<h1 class="sub-title">About me</h1>
+						<p>I'm Melody, a web developer from Mombasa, Kenya. I build clean, responsive websites and enjoy turning ideas into interfaces that are simple to use. I'm currently studying Computer Science while sharpening my skills in front-end and back-end development, and I'm always learning something new.</p>
+						
+						<div class="tab-titles">
+							<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+			                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End</span><br>HTML, CSS and JavaScript for responsive websites</li>
+                            <li><span>Programming</span><br>C and JavaScript fundamentals</li>
+                            <li><span>Databases</span><br>Designing and managing data for web apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing simple, user-friendly web interfaces</li>
+                            <li><span>Web Development</span><br>Building responsive websites and web apps</li>
+                            <li><span>Back-End</span><br>Database development and server-side logic</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2026</span><br>Web Development at Emobilis</li>
+                            <li><span>2025-2029</span><br>Bachelor of Science in Computer Science</li>
+                            <li><span>2025-2026</span><br>Back-End Development at SoloLearn</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------- services ---------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+				<div>
+						<h2>Web Design</h2>
+						<p>Modern, eye-catching layouts that look great on phones, tablets and desktops, and match your brand.</p>
+						<a href="#">learn more</a>
+					</div>
+					<div>
+						<h2>Web Development</h2>
+						<p>Fast, responsive websites and web apps built with HTML, CSS and JavaScript, from landing pages to full portfolios.</p>
+						<a href="#">learn more</a>
+					</div>
+					<div>
+						<h2>Back-End Development</h2>
+						<p>Databases and server-side logic that store your data securely and make your website work behind the scenes.</p>
+						<a href="#">learn more</a>
+					</div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------- portfolio ---------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/pic1.jpeg">
+                    <div class="layer">
+                        <h3>Vibespace Music Platform</h3>
+                        <p>A music website for searching songs, artists and playlists, designed to work smoothly on mobile.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/pic2.jpeg">
+                    <div class="layer">
+                        <h3>Finance Tracker App</h3>
+                        <p>A mobile app interface for tracking transactions and viewing reports, with simple navigation.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/pic3.jpeg">
+                    <div class="layer">
+
+                           <h3>Personal Website</h3>
+                           <p>A multi-page website built with React, using reusable components like the navbar and hero section.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ---------- contacts ---------- -->
+    <div id="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="contacts-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-square-envelope"></i> melodyshiru001@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 0112944835</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contacts-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; Excel. Made with <i class="fa-solid fa-heart"></i> by Excel Melody</p>
+				
+			</div>
+		</div>
+		
+		<script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+		
+		<script>
+			var tablinks = document.getElementsByClassName("tab-links");
+			var tabcontents = document.getElementsByClassName("tab-contents");
+			function opentab(tabname){
+				for(tablink of tablinks){
+					tablink.classList.remove("active-link");
+				}
+				for(tabcontent of tabcontents){
+					tabcontent.classList.remove("active-tab");
+				}
+				event.currentTarget.classList.add("active-link");
+				document.getElementById(tabname).classList.add("active-tab");
+			}
+		</script>
+		
+	</body>
+</html>
